@@ -1,17 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fuegos Artificiales - Fuegos con Amor</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fuegos Artificiales - Fuegos con Amor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <meta name="color-scheme" content="dark light">
 </head>
 <body class="fuegos">
-    <div class="container">
-        <h1>¡Fuegos artificiales para ti! 🎆</h1>
-        <canvas id="canvasFuegos"></canvas>
-        <a class="btn" href="index.html">Volver a la bienvenida</a>
+  <canvas id="canvasFuegos" aria-label="Cielo nocturno con fuegos artificiales" role="img"></canvas>
+
+  <header class="fuegos-header">
+    <a class="brand" href="index.html">← Fuegos con Amor</a>
+    <h1>Para ti, por hacerme feliz</h1>
+  </header>
+
+  <section class="controls" aria-label="Controles de fuegos artificiales">
+    <div class="controls-note">Toca o haz clic en el cielo para lanzar más ✨</div>
+    <div class="control-group" id="group-tipo">
+      <label for="tipo">Tipo</label>
+      <select id="tipo">
+        <option value="clasico">Clásico</option>
+        <option value="estrellas">Estrellas</option>
+        <option value="corazones">Corazones</option>
+      </select>
     </div>
-    <script src="fuegos.js"></script>
+    <div class="control-group" id="group-intensidad">
+      <label for="intensidad">Intensidad</label>
+      <input id="intensidad" type="range" min="1" max="5" value="3">
+    </div>
+    <div class="control-group" id="group-colores">
+      <label for="tema">Colores</label>
+      <select id="tema">
+        <option value="dorado">Dorado</option>
+        <option value="rosa" selected>Rosa</option>
+        <option value="arcoiris">Arcoíris</option>
+        <option value="pastel">Pastel</option>
+      </select>
+    </div>
+    <div class="control-group toggle">
+      <label for="auto">Auto</label>
+      <input id="auto" type="checkbox" checked>
+    </div>
+    <button id="launch" class="btn btn-primary">Lanzar 🎇</button>
+  </section>
+
+  
+
+  <script src="fuegos.js"></script>
 </body>
 </html>

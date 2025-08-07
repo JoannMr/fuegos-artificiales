@@ -1,31 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bienvenida - Fuegos con Amor</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fuegos con Amor ✨</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Parisienne&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body class="bienvenida">
-    <div class="decoracion-fondo"></div>
-    <div class="container">
-        <h1>Bienvenida, mi amor ❤️</h1>
-        <p class="frase">Esta web es solo para ti, para recordarte lo especial que eres para mí.</p>
-        <a class="btn" href="fuegos.html">Ver fuegos artificiales 🎆</a>
-    </div>
-    <div class="corazones"></div>
-    <script>
-      // Animación de corazones flotando
-      const corazones = document.querySelector('.corazones');
-      function crearCorazon() {
-        const corazon = document.createElement('div');
-        corazon.className = 'corazon';
-        corazon.style.left = Math.random() * 100 + 'vw';
-        corazon.style.animationDuration = (2 + Math.random() * 3) + 's';
-        corazones.appendChild(corazon);
-        setTimeout(() => corazon.remove(), 5000);
-      }
-      setInterval(crearCorazon, 500);
-    </script>
+  <div class="aurora-bg" aria-hidden="true"></div>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">Para ti, mi amor</h1>
+        <p class="hero-subtitle">Una pequeña constelación de detalles para recordarte cuánto brillo hay cuando estás conmigo.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="fuegos.html">Ver la sorpresa ahora ✨</a>
+        </div>
+      </div>
+      
+    </section>
+  </main>
+ 
 </body>
 </html>
